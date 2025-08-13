@@ -4,5 +4,5 @@ permalink: /members
 nav: true
 nav_order: 1
 title: members
-description: members of our lab
+description: members of our radio lab
 ---
