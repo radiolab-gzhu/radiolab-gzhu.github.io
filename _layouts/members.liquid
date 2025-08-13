@@ -1,13 +1,12 @@
 ---
 layout: default
 ---
-
 <div class="members-list">
   {% for part in site.data.members %}
     <div class="group">
       <div class="group-header">
         <span class="group-title">{{ part.title }}</span>
-        <span ><hr class="group-hr"></span>
+        <span><hr class="group-hr"></span>
       </div>
       <div class="group-member-card-display">
         {% for member in part.group %}
