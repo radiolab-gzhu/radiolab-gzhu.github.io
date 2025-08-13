@@ -3,8 +3,6 @@ layout: members
 permalink: /members
 nav: true
 nav_order: 1
-title: members
-description: members of our radio lab
+title: Members
+description: Members of our Radio Lab
 ---
-
-a test page
