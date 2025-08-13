@@ -5,81 +5,81 @@
 #   img： path for img #通常放于/assets/img路径下，可每人存放于特定文件夹，指定到文件本体，如/assets/img/example.jpg
 #   label:
 #     -name: name
-#      vaule: vaule
+#      value: value
 #
 
-professor:
-  - title: PROFESSOR
-    group:
-      - name: Xiao Min
-        img: /assets/img/1.jpg
-        label:
-          - key: email
-            vaule: xiaomin@example.com
-          - key: direction
-            vaule: example
+- category: professor
+  title: PROFESSOR
+  group:
+    - name: Xiao Min
+      img: /assets/img/1.jpg
+      label:
+        - key: email
+          value: xiaomin@example.com
+        - key: direction
+          value: example
 
-      - name: Big Min
-        img: /assets/img/1.jpg
-        label:
-          - key: email
-            vaule: bigmin@example.com
-          - key: direction
-            vaule: example
+    - name: Big Min
+      img: /assets/img/1.jpg
+      label:
+        - key: email
+          value: bigmin@example.com
+        - key: direction
+          value: example
 
-doctor:
-  - title: DOCTOR
-    group:
-      - name: Xiao Min
-        img: /assets/img/1.jpg
-        label:
-          - key: email
-            vaule: xiaomin@example.com
-          - key: direction
-            vaule: example
+- category: doctor
+  title: DOCTOR
+  group:
+    - name: Xiao Min
+      img: /assets/img/1.jpg
+      label:
+        - key: email
+          value: xiaomin@example.com
+        - key: direction
+          value: example
 
-      - name: Big Min
-        img: /assets/img/1.jpg
-        label:
-          - key: email
-            vaule: bigmin@example.com
-          - key: direction
-            vaule: example
+    - name: Big Min
+      img: /assets/img/1.jpg
+      label:
+        - key: email
+          value: bigmin@example.com
+        - key: direction
+          value: example
 
-master:
-  - title: MASTER
-    group:
-      - name: Xiao Min
-        img: /assets/img/1.jpg
-        label:
-          - key: email
-            vaule: xiaomin@example.com
-          - key: direction
-            vaule: example
+- category: master
+  title: MASTER
+  group:
+    - name: Xiao Min
+      img: /assets/img/1.jpg
+      label:
+        - key: email
+          value: xiaomin@example.com
+        - key: direction
+          value: example
 
-      - name: Big Min
-        img: /assets/img/1.jpg
-        label:
-          - key: email
-            vaule: bigmin@example.com
-          - key: direction
-            vaule: example
+    - name: Big Min
+      img: /assets/img/1.jpg
+      label:
+        - key: email
+          value: bigmin@example.com
+        - key: direction
+          value: example
 
-student:
-  - title: STUDENT
-    group:
-      - name: Xiao Min
-        img: /assets/img/1.jpg
-        label:
-          - key: email
-            vaule: xiaomin@example.com
-          - key: direction
-            vaule: example
+- category: student
+  title: STUDENT
+  group:
+    - name: Xiao Min
+      img: /assets/img/1.jpg
+      label:
+        - key: email
+          value: xiaomin@example.com
+        - key: direction
+          value: example
 
-      - name: Big Min
-        img: /assets/img/1.jpg
-        label:
-          - key: email
-            vaule: bigmin@example.com
-          - key: direction
-            vaule: example
+    - name: Big Min
+      img: /assets/img/1.jpg
+      label:
+        - key: email
+          value: bigmin@example.com
+        - key: direction
+          value: example
