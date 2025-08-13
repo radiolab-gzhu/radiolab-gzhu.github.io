@@ -2,7 +2,7 @@
 layout: page
 title: group
 permalink: /group/
-nav: true
+nav: false
 nav_order: 8
 ---
 
