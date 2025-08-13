@@ -1,0 +1,86 @@
+# 此文件用于存储人员名单数据,需严格保证缩进量
+#人员数据位于对应组的group下，
+#以name属性和img属性开头结构体如下，可任意添加属性，可改变顺序
+# - name: name
+#   img： path for img #通常放于/assets/img路径下，可每人存放于特定文件夹，指定到文件本体，如/assets/img/example.jpg
+#   label:
+#     -name: name
+#      vaule: vaule
+#
+
+professor:
+  - title: PROFESSOR
+    group:
+      - name: Xiao Min
+        img: /assets/img/1.jpg
+        label:
+          - key: email
+            vaule: xiaomin@example.com
+          - key: direction
+            vaule: example
+
+      - name: Big Min
+        img: /assets/img/1.jpg
+        label:
+          - key: email
+            vaule: bigmin@example.com
+          - key: direction
+            vaule: example
+
+doctor:
+  - title: DOCTOR
+    group:
+      - name: Xiao Min
+        img: /assets/img/1.jpg
+        label:
+          - key: email
+            vaule: xiaomin@example.com
+          - key: direction
+            vaule: example
+
+      - name: Big Min
+        img: /assets/img/1.jpg
+        label:
+          - key: email
+            vaule: bigmin@example.com
+          - key: direction
+            vaule: example
+
+master:
+  - title: MASTER
+    group:
+      - name: Xiao Min
+        img: /assets/img/1.jpg
+        label:
+          - key: email
+            vaule: xiaomin@example.com
+          - key: direction
+            vaule: example
+
+      - name: Big Min
+        img: /assets/img/1.jpg
+        label:
+          - key: email
+            vaule: bigmin@example.com
+          - key: direction
+            vaule: example
+
+student:
+  - title: STUDENT
+    group:
+      - name: Xiao Min
+        img: /assets/img/1.jpg
+        label:
+          - key: email
+            vaule: xiaomin@example.com
+          - key: direction
+            vaule: example
+
+      - name: Big Min
+        img: /assets/img/1.jpg
+        label:
+          - key: email
+            vaule: bigmin@example.com
+          - key: direction
+            vaule: example
+

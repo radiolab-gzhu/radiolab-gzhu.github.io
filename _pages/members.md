@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: members
 permalink: /members
 nav: true
 nav_order: 1
 title: members
+description: members of our lab
 ---
 
-a test page
+
