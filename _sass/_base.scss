@@ -1530,23 +1530,23 @@ figure.cover {
     margin-bottom: 5px;
 }
 
-.group-member-card-display .group-member-card .member-label .key-vaule {
+.group-member-card-display .group-member-card .member-label .key-value {
     margin-right: 20px;
     transition: all 0.5s
 }
 
-.group-member-card-display .group-member-card .member-label .key-vaule:hover {
+.group-member-card-display .group-member-card .member-label .key-value:hover {
     color: var(--global-hover-color);
     scale: 1.05;
     transition: all 0.5s;
 }
 
-.group-member-card-display .group-member-card .member-label .key-vaule .key {
+.group-member-card-display .group-member-card .member-label .key-value .key {
     font-size: 14px;
     font-weight: 900;
 }
 
-.group-member-card-display .group-member-card .member-label .key-vaule .vaule {
+.group-member-card-display .group-member-card .member-label .key-value .value {
     font-size: 18px;
     font-weight: 300;
     line-height: 1px;

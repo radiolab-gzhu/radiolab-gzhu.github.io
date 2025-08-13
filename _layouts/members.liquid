@@ -11,7 +11,7 @@ layout: default
                 <span ><hr class="group-hr"></span>
             </div>
             <div class="group-member-card-display">
-                {% for member in part.group % }}
+                {% for member in part.group %}
                     <div class="group-member-card">
                         <div class="member-name-img">
                             <img src="{{ member.img }}" class="member-image" alt="#">
@@ -20,9 +20,9 @@ layout: default
                         <div class="member-label">
                             <ul class="member-label">
                                 {% for label in member.label %}
-                                    <li class="key-vaule">
+                                    <li class="key-value">
                                         <span class="key">{{ label.key }}:</span>
-                                        <span class="vaule">{{ label.vaule }}</span>
+                                        <span class="value">{{ label.value }}</span>
                                     </li>
                                 {% endfor %}
                             </ul>
