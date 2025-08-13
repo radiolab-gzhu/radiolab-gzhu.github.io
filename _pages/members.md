@@ -6,5 +6,3 @@ nav_order: 1
 title: members
 description: members of our lab
 ---
-
-

@@ -3,33 +3,32 @@ layout: default
 ---
 
 <div class="members-list">
-    {% for part in site.data.members %}
-        
-        <div class="group">
-            <div class="group-header">
-                <span class="group-title">{{ part.title }}</span>
-                <span ><hr class="group-hr"></span>
+  {% for part in site.data.members %}
+    <div class="group">
+      <div class="group-header">
+        <span class="group-title">{{ part.title }}</span>
+        <span ><hr class="group-hr"></span>
+      </div>
+      <div class="group-member-card-display">
+        {% for member in part.group %}
+          <div class="group-member-card">
+            <div class="member-name-img">
+              <img src="{{ member.img }}" class="member-image" alt="#">
+              <span class="member-name">{{ member.name }}</span>
             </div>
-            <div class="group-member-card-display">
-                {% for member in part.group %}
-                    <div class="group-member-card">
-                        <div class="member-name-img">
-                            <img src="{{ member.img }}" class="member-image" alt="#">
-                            <span class="member-name">{{ member.name }}</span>
-                        </div>
-                        <div class="member-label">
-                            <ul class="member-label">
-                                {% for label in member.label %}
-                                    <li class="key-value">
-                                        <span class="key">{{ label.key }}:</span>
-                                        <span class="value">{{ label.value }}</span>
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
+            <div class="member-label">
+              <ul class="member-label">
+                {% for label in member.label %}
+                  <li class="key-value">
+                    <span class="key">{{ label.key }}:</span>
+                    <span class="value">{{ label.value }}</span>
+                  </li>
                 {% endfor %}
+              </ul>
             </div>
-        </div>
-    {% endfor %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
 </div>
