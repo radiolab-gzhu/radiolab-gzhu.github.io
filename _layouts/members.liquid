@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+{% if page.title %}
+  <div class="members-header">
+    <span class="title">{{ page.title }}</span>
+    <span class="description">{{ page.description }}</span>
+</div>
+{% endif %}
 <div class="members-list">
   {% for part in site.data.members %}
     <div class="group">

@@ -1430,6 +1430,7 @@ figure.cover {
 
 .group {
   padding: 10px;
+  padding-bottom: 30px;
 }
 
 .group-header {
@@ -1549,5 +1550,25 @@ figure.cover {
   font-size: 18px;
   font-weight: 300;
   line-height: 1px;
+  font-style: italic;
+}
+
+.members-header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.members-header .title {
+  font-size: 25px;
+  font-weight: 1000;
+}
+
+.members-header .description {
+  font-size: 10px;
+  font-weight: 500;
   font-style: italic;
 }
