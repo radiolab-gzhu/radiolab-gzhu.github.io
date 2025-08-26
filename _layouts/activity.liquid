@@ -1,14 +1,14 @@
 ---
 layout: defualt
 ---
-<div class="header">
+<div class="activity-header" style="font-size: large;display flex;">
   <span> {{ page.title }} </span>
   <span> {{ page.description }} </span>
 </div>
 <div class="activity-list">
-  <ul class="list">
+  <ul class="activity-list">
     {% for activity in site.data.activity %}
-      <li class="item">
+      <li class="activity-list-item">
         <a href="{{ activity.url }}"> {{ activity.title }} </a>
       </li>
     {% endfor %}
