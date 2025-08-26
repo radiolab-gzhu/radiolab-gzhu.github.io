@@ -6,6 +6,7 @@ permalink: /recent activity
 title: recent activity
 description: recent activity of our lab
 ---
+
 <div class="activity-list">
   <ul class="activity-list">
     {% for activity in site.data.activity %}
