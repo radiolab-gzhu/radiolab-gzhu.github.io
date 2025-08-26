@@ -1,10 +1,12 @@
 ---
 layout: defualt
 ---
-{% comment %} <div class="activity-header" style="font-size: large;display flex;">
-  <span> {{ page.title }} </span>
-  <span> {{ page.description }} </span>
-</div> {% endcomment %}
+{% comment %} 
+  <div class="activity-header" style="font-size: large;display flex;flex-direction: column;">
+    <span> {{ page.title }} </span>
+    <span> {{ page.description }} </span>
+</div> 
+{% endcomment %}
 <div class="activity-list">
   <ul class="activity-list">
     {% for activity in site.data.activity %}
