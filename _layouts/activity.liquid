@@ -1,0 +1,14 @@
+---
+layout: defualt
+---
+<div class="header">
+  <span> {{ page.title }} </span>
+  <span> {{ page.description }} </span>
+</div>
+<div class="activity-list">
+  <ul class="list">
+    {% for activity in site.data.activity %}
+      <li class="item"><a href="{{ activity.url }}"> {{ activity.title }} </a></li>
+    {% endfor %}
+  </ul>
+</div>
