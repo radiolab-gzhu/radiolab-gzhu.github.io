@@ -12,25 +12,29 @@ layout: default
     <div class="group">
       <div class="group-header">
         <span class="group-title">{{ part.title }}</span>
-        <span><hr class="group-hr"></span>
+        <hr class="group-hr">
       </div>
+
       <div class="group-member-card-display">
         {% for member in part.group %}
           <div class="group-member-card">
+            <!-- 左侧头像+姓名 -->
             <div class="member-name-img">
-              <img src="{{ member.img }}" class="member-image" alt="#">
+              <img src="{{ member.img }}" class="member-image" alt="{{ member.name }}">
               <span class="member-name">{{ member.name }}</span>
             </div>
-            <div class="member-label">
-              <ul class="member-label">
-                {% for label in member.label %}
-                  <li class="key-value">
-                    <span class="key">{{ label.key }}:</span>
-                    <span class="value">{{ label.value }}</span>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
+
+            <!-- 右侧固定信息 -->
+            <ul class="member-info">
+              <li>
+                <span class="key">Introduction:</span>
+                <span class="value">{{ member.introduction | default: "N/A" }}</span>
+              </li>
+              <li>
+                <span class="key">Email:</span>
+                <span class="value">{{ member.email | default: "N/A" }}</span>
+              </li>
+            </ul>
           </div>
         {% endfor %}
       </div>
