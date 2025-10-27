@@ -1464,7 +1464,7 @@ figure.cover {
 /* 单张卡片：无边框、无圆角 */
 .group-member-card {
   width: 400px;
-  margin: 0 auto;              /* 水平居中 */
+  margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -1491,7 +1491,7 @@ figure.cover {
   width: 90px;
   height: 90px;
   object-fit: cover;
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
 .member-image:hover {
@@ -1503,7 +1503,7 @@ figure.cover {
   font-size: 20px;
   font-weight: 1000;
   color: var(--global-text-color-light);
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
 .member-name:hover {
