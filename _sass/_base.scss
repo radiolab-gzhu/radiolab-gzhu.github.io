@@ -1463,7 +1463,9 @@ figure.cover {
 
 /* 单张卡片：无边框、无圆角 */
 .group-member-card {
-  width: 400px;
+  --width: 75%;
+  width: var(--width);
+  height: calc(var(--width) * 0.55);
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -1599,8 +1601,8 @@ figure.cover {
 
 .member-grid {
   max-width: 1200px;
-  margin: 0 auto;
   background: transparent;
+  margin-bottom: 10px;
 }
 .member-grid-container {
   display: flex;
@@ -1618,7 +1620,7 @@ figure.cover {
 /* ========= 人物卡片 ========= */
 .person-card {
   width: 200px;
-  height: 360px;
+  height: 250px;
   border-radius: 12px;
   overflow: hidden;
   display: flex;
