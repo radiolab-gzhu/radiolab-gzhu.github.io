@@ -35,23 +35,20 @@ layout: default
     <!-- member -->
     <div class="member-grid">
       <h2 class="member-title">Members</h2>
-      {% for category in site.data.members %}
-        <div class="member-category">
-          <h3 class="category-title">{{ category.title }}</h3>
-          <div class="member-grid-container">
-            {% for person in category.group %}
-              <div class="person-card">
-                <div class="person-image">
-                  <img src="{{ person.img }}" alt="{{ person.name }}">
-                </div>
-                <div class="person-name">
-                  {{ person.name }}
-                </div>
+      <div class="member-grid-container">
+        {% for category in site.data.members %}
+          {% for person in category.group %}
+            <div class="person-card">
+              <div class="person-image">
+                <img src="{{ person.img }}" alt="{{ person.name }}">
               </div>
-            {% endfor %}
-          </div>
-        </div>
-      {% endfor %}
+              <div class="person-name">
+                {{ person.name }}
+              </div>
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </div>
     </div>
     <!-- Selected papers -->
     {% if page.selected_papers %}

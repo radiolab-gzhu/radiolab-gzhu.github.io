@@ -1,6 +1,9 @@
 #
 - title: baidu
-  url: https://baidu.com
+  path: https://baidu.com
 
 - title: bing
-  url: https://bing.com
+  path: https://bing.com
+
+- title: 1
+  path: /activities/1.md
