@@ -1446,11 +1446,11 @@ figure.cover {
 }
 
 .group-hr {
-  width: 100%;
+  width: 80%;
   height: 2px;
   border: none;
-  background-color: var(--global-theme-color);
-  box-shadow: 5px 5px 10px var(--global-theme-color);
+  background-color: var(--global-divider-color);
+  box-shadow: 5px 5px 10px var(--global-divider-color);
 }
 
 /* 卡片列表 */
@@ -1465,19 +1465,20 @@ figure.cover {
 .group-member-card {
   --width: 75%;
   width: var(--width);
-  height: 300px;
+  height: 200px auto;
   margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 20px;
   background-color: var(--global-bg-color);
-  box-shadow: 5px 5px 10px var(--global-theme-color);
+  box-shadow: 0 4px 15px var(--global-divider-color);
   transition: transform 1s;
 }
 
 .group-member-card:hover {
   transform: scale(1.05);
   transition: transform 2s;
+  box-shadow: 0 8px 25px var(--global-hover-color);
 }
 
 /* 左侧头像+姓名 */
@@ -1490,8 +1491,8 @@ figure.cover {
 }
 
 .member-image {
-  width: 90px;
-  height: 90px;
+  width: 150px;
+  height: 55%;
   object-fit: cover;
   transition: transform 0.5s;
 }
@@ -1502,7 +1503,7 @@ figure.cover {
 
 .member-name {
   margin-top: 8px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 1000;
   color: var(--global-text-color-light);
   transition: transform 0.5s;
