@@ -1465,7 +1465,7 @@ figure.cover {
 .group-member-card {
   --width: 75%;
   width: var(--width);
-  height: calc(var(--width) * 0.55);
+  height: 300px;
   margin: 0 auto;
   display: flex;
   align-items: center;
