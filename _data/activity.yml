@@ -1,9 +1,3 @@
-#
-- title: baidu
-  path: https://baidu.com
-
-- title: bing
-  path: https://bing.com
 
 - title: 1
   path: /activities/1.md
