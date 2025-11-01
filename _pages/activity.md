@@ -14,7 +14,7 @@ description: recent activity of our lab
       <ul class="activity-list">
         {% for activity in site.data.activity %}
           <li class="activity-list-item">
-            <a href="{% link {{ activity.path }} %}">{{ activity.title }}</a>
+            <a href="{{ activity.url }}">{{ activity.title }}</a>
           </li>
         {% endfor %}
       </ul>
