@@ -4,9 +4,9 @@ layout: default
 <section class="activity-section">
   <h2 class="activity-title">{{ page.title }}</h2>
   <ul class="activity-list">
-    {% for activity in site.data.activity %}
+    {% for activity in site.activity %}
       <li class="activity-item">
-        <a href="{{ activity.url }}" class="activity-link">
+        <a href="{{ activity.permalink }}" class="activity-link">
           {{ activity.title }}
           {% if activity.date %}
             <div class="activity-date">{{ activity.date }}</div>
