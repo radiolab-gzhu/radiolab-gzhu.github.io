@@ -12,8 +12,7 @@
         - key: Email
           value: rui.luo@gzhu.edu.cn & rluoastro@gmail.com
         - key: Personal Website
-          value: https://ruiluoastro.github.io/
-
+          url: https://ruiluoastro.github.io/
 
 - category: master
   title: MASTER
