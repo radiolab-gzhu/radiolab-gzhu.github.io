@@ -16,15 +16,15 @@ layout: default
       </div>
       <div class="group-member-card-display">
         {% for member in part.group %}
-          <div class="member-name-img">
-            <img src="{{ member.img }}" class="member-image" alt="{{ member.name }}">
-            <span class="member-name">{{ member.name }}</span>
-          </div>
           <div class="group-member-card">
+            <div class="member-name-img">
+              <img src="{{ member.img }}" class="member-image" alt="{{ member.name }}">
+              <span class="member-name">{{ member.name }}</span>
+            </div>
             <div class="member-label">
-              <ul class="member-label">
+              <ul class="member-info">
                 {% for label in member.label %}
-                  <li class="key-value">
+                  <li class="member-info">
                     <span class="key">{{ label.key }}:</span>
                     <span class="value">{{ label.value }}</span>
                   </li>
