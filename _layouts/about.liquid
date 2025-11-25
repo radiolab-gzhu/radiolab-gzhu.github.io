@@ -33,26 +33,28 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
     <!-- member -->
-    <div class="member-grid">
-      <h2 class="member-title">Members</h2>
-      <div class="member-grid-container">
-        {% for category in site.data.members %}
-          {% for person in category.group %}
-            <div class="person-card">
-              <div class="person-image">
-                <img src="{{ person.img }}" alt="{{ person.name }}">
+    {% comment %}
+      <div class="member-grid">
+        <h2 class="member-title">Members</h2>
+        <div class="member-grid-container">
+          {% for category in site.data.members %}
+            {% for person in category.group %}
+              <div class="person-card">
+                <div class="person-image">
+                  <img src="{{ person.img }}" alt="{{ person.name }}">
+                </div>
+                <div class="person-name">
+                  {{ person.name }}
+                </div>
+                {% if member.ident %}
+                  <p class="ident">{{ member.ident }}</p>
+                {% endif %}
               </div>
-              <div class="person-name">
-                {{ person.name }}
-              </div>
-              {% if member.ident %}
-                <p class="ident">{{ member.ident }}</p>
-              {% endif %}
-            </div>
+            {% endfor %}
           {% endfor %}
-        {% endfor %}
+        </div>
       </div>
-    </div>
+    {% endcomment %}
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
