@@ -27,7 +27,7 @@ announcements:
 #   limit: 3 # leave blank to include all the blog posts
 ---
 
-Embarking on a journey to unravel the universe's most enigmatic whispers, the Radio Astronomy Lab at Guangzhou University is a dynamic hub of cutting-edge research and technological innovation. Led by the bright and driven young radio astronomer, Professor Rui Luo, our lab is dedicated to pushing the frontiers of our understanding of the cosmos through the powerful lens of radio waves.
+Embarking on a journey to unravel the universe's most enigmatic whispers, the Radio Astronomy Lab at Guangzhou University is a dynamic hub of cutting-edge research and technological innovation. Led by a fearless and unfettered radio astronomer, Rui Luo, our lab is dedicated to pushing the frontiers of our understanding of the cosmos through the powerful lens of radio waves.
 
 Our lab's research portfolio is broad and ambitious, encompassing several key areas:
 

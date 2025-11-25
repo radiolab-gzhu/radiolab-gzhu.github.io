@@ -5,7 +5,7 @@
   group:
     - name: Rui Luo
       img: /assets/img/RuiLuo/ruiluo.jpg
-      ident: Principal Investigator
+      ident: Associate Professor
       label:
         - key: Research Interests
           value: Fast Radio Bursts, Pulsars, Radio Frequency Intereference, the unknown unknown; AI-related data science
@@ -14,8 +14,8 @@
         - key: Personal Website
           url: https://ruiluoastro.github.io/
 
-- category: master
-  title: MASTER
+- category: graduate students
+  title: Graduate Students
   group:
     - name: Shiqian Zhao
       img: assets/img/ShiqianZhao/ShiqianZhao.jpg
@@ -49,8 +49,8 @@
         - key: Email
           value: tiant@e.gzhu.edu.cn
 
-- category: student
-  title: STUDENT
+- category: undergraduate students
+  title: Undergraduate Students
   group:
     - name: Chengwei Liang
       img: assets/img/ChengweiLiang/ChengweiLiang.jpg
@@ -79,5 +79,7 @@
     - name: Jinqiang Zeng
       img: assets/img/JinqiangZeng/JinqiangZeng.jpg
       label:
+        - key: Research Interest
+          value: FRB data processing
         - key: Email
-          value: 1159264215@qq.com
+          value: 1159264215@qq.com & zeng4388@gmail.com
