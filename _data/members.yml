@@ -14,32 +14,70 @@
           value: https://ruiluoastro.github.io/
 
 
-# - category: master
-#   title: MASTER
-#   group:
-#     - name: Xiao Min
-#       img: /assets/img/1.jpg
-#       label:
-#         - key: value
-#           value: xiaomin@example.com
+- category: master
+  title: MASTER
+  group:
+    - name: Shiqian Zhao
+      img: assets/img/ShiqianZhao/ShiqianZhao.jpg
+      label:
+        - key: Research Interests
+          value: Long-period radio transient sources
+        - key: Email
+          value: sqzhao@e.gzhu.edu.cn
 
-#     - name: Big Min
-#       img: /assets/img/1.jpg
-#       label:
-#         - key: value
-#           value: bigmin@example.com
+    - name: Yao Chen
+      img: assets/img/YaoChen/YaoChen.jpg
+      label:
+        - key: Research Interests
+          value: Utilize machine learning to achieve non-dispersive multi-beam fast radio burst search
+        - key: Email
+          value: ychen@e.gzhu.edu.cn
+    
+    - name: Siyi Tan
+      img: assets/img/SiyiTan/SiyiTan.jpg
+      label:
+        - key: Research Interests
+          value: long period transient
+        - key: Email
+          value: sytan@e.gzhu.edu.cn
 
-# - category: student
-#   title: STUDENT
-#   group:
-#     - name: Xiao Min
-#       img: /assets/img/1.jpg
-#       label:
-#         - key: value
-#           value: xiaomin@example.com
+    - name: Ting Tian
+      img: assets/img/TingTian/TingTian.jpg
+      label:
+        - key: Research Interests
+          value: Radio frequency interference processing and restoration of contaminated signal background in radio astronomy based on machine learning
+        - key: Email
+          value: tiant@e.gzhu.edu.cn
 
-#     - name: Big Min
-#       img: /assets/img/1.jpg
-#       label:
-#         - key: value
-#           value: bigmin@example.com
+- category: student
+  title: STUDENT
+  group:
+    - name: Chengwei Liang
+      img: assets/img/ChengweiLiang/ChengweiLiang.jpg
+      label:
+        - key: Research Interests
+          value: Comparison of repetitive bursts and non-repetitive bursts in FRB
+        - key: Email
+          value: cwliang@e.gzhu.edu.cn
+
+    - name: Binying Chen
+      img: assets/img/BinyingChen/BinyingChen.jpg
+      label:
+        - key: Research Interests
+          value: The influence of FAST clock aberration on pulsar timing
+        - key: Email
+          value: 
+
+    - name: Junhui Cai
+      img: assets/img/JunhuiCai/JunhuiCai.jpg
+      label:
+        - key: Research Interests
+          value: Astronomical data processing
+        - key: Email
+          value: jhuicai@e.gzhu.edu.cn
+
+    - name: Jinqiang Zeng
+      img: assets/img/JinqiangZeng/JinqiangZeng.jpg
+      label:
+        - key: Email
+          value: 1159264215@qq.com

@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+# profile:
+#   align: right
+#   image: prof_pic.jpg
+#   image_circular: false # crops the image to make it circular
+#   more_info: >
+#     <p>555 your office number</p>
+#     <p>123 your address street</p>
+#     <p>Your City, State 12345</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +27,13 @@ announcements:
 #   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Embarking on a journey to unravel the universe's most enigmatic whispers, the Radio Astronomy Lab at Guangzhou University is a dynamic hub of cutting-edge research and technological innovation. Led by the bright and driven young radio astronomer, Professor Rui Luo, our lab is dedicated to pushing the frontiers of our understanding of the cosmos through the powerful lens of radio waves.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Our lab's research portfolio is broad and ambitious, encompassing several key areas:
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Fast Radio Bursts (FRBs): At the core of our work, we are intensely focused on understanding the nature, distribution, and astrophysical implications of FRBs, seeking to unlock the secrets behind these powerful cosmic signals.
+Pulsars: We investigate these highly magnetized, rapidly rotating neutron stars, exploring their emission mechanisms, their role in fundamental physics, and their potential as cosmic clocks.
+Radio Frequency Interference (RFI): As radio telescopes become more sensitive, mitigating human-generated radio noise is paramount. Our team works on sophisticated techniques to identify, characterize, and remove RFI, ensuring the integrity of our astronomical observations.
+AI-Related Data Science: The sheer volume and complexity of modern radio astronomy data demand advanced analytical tools. We leverage cutting-edge artificial intelligence and machine learning algorithms for data processing, source detection, signal classification, and uncovering subtle patterns in vast datasets.
+Radio Instrumentation: Innovation in telescope design and detector technology is crucial. We are involved in developing and enhancing the hardware and software that power our radio astronomy observations, pushing the boundaries of sensitivity and observational capabilities.
+At the Radio Astronomy Lab, we foster a collaborative and stimulating environment where aspiring scientists can engage in meaningful research, contribute to groundbreaking discoveries, and develop the skills needed to shape the future of radio astronomy. We invite you to explore the universe with us, one radio wave at a time.
