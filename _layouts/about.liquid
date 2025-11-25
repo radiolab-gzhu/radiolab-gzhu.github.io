@@ -45,6 +45,9 @@ layout: default
               <div class="person-name">
                 {{ person.name }}
               </div>
+              {% if member.ident %}
+                <p class="ident">{{ member.ident }}</p>
+              {% endif %}
             </div>
           {% endfor %}
         {% endfor %}

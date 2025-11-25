@@ -5,6 +5,7 @@
   group:
     - name: Rui Luo
       img: /assets/img/RuiLuo/ruiluo.jpg
+      ident: Principal Investigator
       label:
         - key: Research Interests
           value: Fast Radio Bursts, Pulsars, Radio Frequency Intereference, the unknown unknown; AI-related data science
