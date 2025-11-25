@@ -20,7 +20,7 @@
     - name: Shiqian Zhao
       img: assets/img/ShiqianZhao/ShiqianZhao.jpg
       label:
-        - key: Research Interests
+        - key: Research Interest
           value: Long-period radio transient sources
         - key: Email
           value: sqzhao@e.gzhu.edu.cn
@@ -28,7 +28,7 @@
     - name: Yao Chen
       img: assets/img/YaoChen/YaoChen.jpg
       label:
-        - key: Research Interests
+        - key: Research Interest
           value: Utilize machine learning to achieve non-dispersive multi-beam fast radio burst search
         - key: Email
           value: ychen@e.gzhu.edu.cn
@@ -36,7 +36,7 @@
     - name: Siyi Tan
       img: assets/img/SiyiTan/SiyiTan.jpg
       label:
-        - key: Research Interests
+        - key: Research Interest
           value: long period transient
         - key: Email
           value: sytan@e.gzhu.edu.cn
@@ -44,7 +44,7 @@
     - name: Ting Tian
       img: assets/img/TingTian/TingTian.jpg
       label:
-        - key: Research Interests
+        - key: Research Interest
           value: Radio frequency interference processing and restoration of contaminated signal background in radio astronomy based on machine learning
         - key: Email
           value: tiant@e.gzhu.edu.cn
@@ -55,7 +55,7 @@
     - name: Chengwei Liang
       img: assets/img/ChengweiLiang/ChengweiLiang.jpg
       label:
-        - key: Research Interests
+        - key: Research Interest
           value: Comparison of repetitive bursts and non-repetitive bursts in FRB
         - key: Email
           value: cwliang@e.gzhu.edu.cn
@@ -63,15 +63,15 @@
     - name: Binying Chen
       img: assets/img/BinyingChen/BinyingChen.jpg
       label:
-        - key: Research Interests
+        - key: Research Interest
           value: The influence of FAST clock aberration on pulsar timing
         - key: Email
-          value:
+          value: 32319700015@e.gzhu.edu.cn
 
     - name: Junhui Cai
       img: assets/img/JunhuiCai/JunhuiCai.jpg
       label:
-        - key: Research Interests
+        - key: Research Interest
           value: Astronomical data processing
         - key: Email
           value: jhuicai@e.gzhu.edu.cn
