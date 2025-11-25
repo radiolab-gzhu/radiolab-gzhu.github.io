@@ -3,59 +3,43 @@
 - category: professor
   title: PROFESSOR
   group:
-    - name: Xiao Min
-      img: /assets/img/1.jpg
+    - name: Rui Luo
+      img: /assets/img/RuiLuo/ruiluo.jpg
       label:
-        - introduction: email
-          email: xiaomin@example.com
+        - key: Research Interests
+          value: Fast Radio Bursts, Pulsars, Radio Frequency Intereference, the unknown unknown; AI-related data science
+        - key: Email
+          value: rui.luo@gzhu.edu.cn & rluoastro@gmail.com
+        - key: Personal Website
+          value: https://ruiluoastro.github.io/
 
-    - name: Big Min
-      img: /assets/img/1.jpg
-      label:
-        - introduction: email
-          email: bigmin@example.com
 
-- category: doctor
-  title: DOCTOR
-  group:
-    - name: Xiao Min
-      img: /assets/img/1.jpg
-      label:
-        - introduction: email
-          email: xiaomin@example.com
+# - category: master
+#   title: MASTER
+#   group:
+#     - name: Xiao Min
+#       img: /assets/img/1.jpg
+#       label:
+#         - key: value
+#           value: xiaomin@example.com
 
-    - name: Big Min
-      img: /assets/img/1.jpg
-      label:
-        - introduction: email
-          email: bigmin@example.com
+#     - name: Big Min
+#       img: /assets/img/1.jpg
+#       label:
+#         - key: value
+#           value: bigmin@example.com
 
-- category: master
-  title: MASTER
-  group:
-    - name: Xiao Min
-      img: /assets/img/1.jpg
-      label:
-        - introduction: email
-          email: xiaomin@example.com
+# - category: student
+#   title: STUDENT
+#   group:
+#     - name: Xiao Min
+#       img: /assets/img/1.jpg
+#       label:
+#         - key: value
+#           value: xiaomin@example.com
 
-    - name: Big Min
-      img: /assets/img/1.jpg
-      label:
-        - introduction: email
-          email: bigmin@example.com
-
-- category: student
-  title: STUDENT
-  group:
-    - name: Xiao Min
-      img: /assets/img/1.jpg
-      label:
-        - introduction: email
-          email: xiaomin@example.com
-
-    - name: Big Min
-      img: /assets/img/1.jpg
-      label:
-        - introduction: email
-          email: bigmin@example.com
+#     - name: Big Min
+#       img: /assets/img/1.jpg
+#       label:
+#         - key: value
+#           value: bigmin@example.com

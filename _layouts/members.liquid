@@ -27,23 +27,6 @@ layout: default
                 {% endfor %}
               </ul>
             </div>
-            <!-- 左侧头像+姓名 -->
-            {% comment %} <div class="member-name-img">
-              <img src="{{ member.img }}" class="member-image" alt="{{ member.name }}">
-              <span class="member-name">{{ member.name }}</span>
-            </div> {% endcomment %}
-
-            <!-- 右侧固定信息 -->
-            {% comment %} <ul class="member-info">
-              <li>
-                <span class="key"></span>
-                <span class="value">{{ member.introduction | default: 'N/A' }}</span>
-              </li>
-              <li>
-                <span class="key">email:</span>
-                <span class="value">{{ member.email | default: 'N/A' }}</span>
-              </li>
-            </ul> {% endcomment %}
           </div>
         {% endfor %}
       </div>
