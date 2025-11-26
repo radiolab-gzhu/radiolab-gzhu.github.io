@@ -1,7 +1,7 @@
 # 此文件用于存储人员名单数据,需严格保证缩进量
 
-- category: professor
-  title: PROFESSOR
+- category: principal investigators
+  title: Principal Investigators
   group:
     - name: Rui Luo
       img: /assets/img/RuiLuo/ruiluo.jpg
@@ -45,7 +45,7 @@
       img: assets/img/TingTian/TingTian.jpg
       label:
         - key: Research Interest
-          value: Radio frequency interference processing and restoration of contaminated signal background in radio astronomy based on machine learning
+          value: Radio Frequency Interference, ML/AI data science
         - key: Email
           value: tiant@e.gzhu.edu.cn
 
@@ -83,3 +83,11 @@
           value: FRB data processing
         - key: Email
           value: 1159264215@qq.com & zeng4388@gmail.com
+
+    - name: Jingwen Chen
+      img: assets/img/JingwenChen/JingwenChen.jpg
+      label:
+        - key: Research Interest
+          value: Pulsar
+        - key: Email
+          value: 2473524498@qq.com
