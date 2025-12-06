@@ -37,7 +37,7 @@ Pulsars: We investigate these highly magnetized, rapidly rotating neutron stars,
 
 Radio Frequency Interference (RFI): As radio telescopes become more sensitive, mitigating human-generated radio noise is paramount. Our team works on sophisticated techniques to identify, characterize, and remove RFI, ensuring the integrity of our astronomical observations.
 
-AI-Related Data Science: The sheer volume and complexity of modern radio astronomy data demand advanced analytical tools. We leverage cutting-edge artificial intelligence and machine learning algorithms for data processing, source detection, signal classification, and uncovering subtle patterns in vast datasets.
+AI-Driven Data Science: The sheer volume and complexity of modern radio astronomy data demand advanced analytical tools. We leverage cutting-edge artificial intelligence and machine learning algorithms for data processing, source detection, signal classification, and uncovering subtle patterns in vast datasets.
 
 Radio Instrumentation: Innovation in telescope design and detector technology is crucial. We are involved in developing and enhancing the hardware and software that power our radio astronomy observations, pushing the boundaries of sensitivity and observational capabilities.
 

@@ -53,7 +53,7 @@
   title: Undergraduate Students
   group:
     - name: Chengwei Liang
-      img: assets/img/ChengweiLiang/ChengweiLiang.jpg
+      img: assets/img/ChengweiLiang/ChengweiLiang2.jpg
       label:
         - key: Research Interest
           value: Comparison of repetitive bursts and non-repetitive bursts in FRB
@@ -66,7 +66,7 @@
         - key: Research Interest
           value: The influence of FAST clock aberration on pulsar timing
         - key: Email
-          value: 32319700015@e.gzhu.edu.cn
+          value: bychen@e.gzhu.edu.cn
 
     - name: Junhui Cai
       img: assets/img/JunhuiCai/JunhuiCai.jpg
