@@ -1741,20 +1741,20 @@ $color-secondary: #3b6de5;
 // 定义动画
 @keyframes expandcard {
   0% {
-    width: 400px;
+    width: 40%;
   }
   100% {
-    width: 900px;
+    width: 90%;
   }
 }
 
 @keyframes reducecard {
   0%,
   60% {
-    width: 900px;
+    width: 90%;
   }
   100% {
-    width: 40px;
+    width: 40%;
   }
 }
 
