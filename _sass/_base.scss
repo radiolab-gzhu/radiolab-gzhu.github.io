@@ -1741,20 +1741,20 @@ $color-secondary: #3b6de5;
 // 定义动画
 @keyframes expandcard {
   0% {
-    width: 40%;
+    width: 400px;
   }
   100% {
-    width: 90%;
+    width: 900px;
   }
 }
 
 @keyframes reducecard {
   0%,
   60% {
-    width: 90%;
+    width: 900px;
   }
   100% {
-    width: 40%;
+    width: 40px;
   }
 }
 
@@ -1790,7 +1790,9 @@ $color-secondary: #3b6de5;
 
 // 成员网格布局
 .member-grid {
-  @extend %centered-flex;
+  // @extend %centered-flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
   align-content: center;
   justify-items: center;
@@ -1799,11 +1801,11 @@ $color-secondary: #3b6de5;
 // 成员卡片
 .member-grid .member-card {
   @extend %centered-flex;
-  flex-grow: 0;
+  flex-grow: 1;
   box-shadow: 5px 5px 25px black;
   margin: 15px;
   width: 400px;
-  transition: all 3s $animation-curve;
+  // transition: all 3s $animation-curve;
 
   &.expanded {
     animation: expandcard 3s $animation-curve forwards;
