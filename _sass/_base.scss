@@ -1726,22 +1726,19 @@ figure.cover {
 }
 
 .member-grid {
-    /* display: grid; */
-    /* grid-template-columns: repeat(2, 1fr); */
-    display: flex;
-    gap: 25px;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  display: flex;
+  gap: 25px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .member-card {
   flex-grow: 0;
   display: flex;
-  /* width: 40%; */
-  /* border: 3px solid red; */
-  /* flex-direction: column; */
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -1751,7 +1748,7 @@ figure.cover {
   margin-top: 10px;
   margin: 15px;
   animation: none;
-   width: var(--card-width, 40%);
+  width: var(--card-width, 400px);
   transition: width 1s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -1851,7 +1848,7 @@ figure.cover {
 }
 
 .base-info .ident {
-    justify-items: center;
+  justify-items: center;
   font-size: 15px;
   color: #3B6DE5;
   font-weight: 900;

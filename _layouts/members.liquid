@@ -77,21 +77,21 @@ layout: default
   {% endfor %}
 </div>
 <script>
-  document.querySelectorAll(".member-card").forEach((card) => {
+  document.querySelectorAll('.member-card').forEach((card) => {
     let hoverTimeout;
     let isInitialized = false;
 
-    card.addEventListener("mouseenter", () => {
+    card.addEventListener('mouseenter', () => {
       clearTimeout(hoverTimeout);
-      card.classList.add("expanded");
-      card.classList.add("initialized");
+      card.classList.add('expanded');
+      card.classList.add('initialized');
       isInitialized = true;
     });
 
-    card.addEventListener("mouseleave", () => {
+    card.addEventListener('mouseleave', () => {
       if (isInitialized) {
         hoverTimeout = setTimeout(() => {
-          card.classList.remove("expanded");
+          card.classList.remove('expanded');
         }, 100);
       }
     });
