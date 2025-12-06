@@ -1791,8 +1791,9 @@ $color-secondary: #3b6de5;
 // 成员网格布局
 .member-grid {
   // @extend %centered-flex;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  display: flex;
+  // grid-template-columns: repeat(2, 1fr); 
+  flex-wrap: wrap;
   gap: 25px;
   align-content: center;
   justify-items: center;
@@ -1801,12 +1802,12 @@ $color-secondary: #3b6de5;
 // 成员卡片
 .member-grid .member-card {
   @extend %centered-flex;
-  flex-grow: 1;
+  flex: 0 0 calc(50% - 25px);
   box-shadow: 5px 5px 25px black;
   margin: 15px;
   width: 400px;
   height: auto;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   // transition: all 3s $animation-curve;
 
   &.expanded {
@@ -1889,7 +1890,7 @@ $color-secondary: #3b6de5;
 }
 
 // 响应式布局
-@media (min-width: 700px) {
+@media (min-width: 300px) {
   .member-grid .member-card {
     flex-direction: row;
   }
