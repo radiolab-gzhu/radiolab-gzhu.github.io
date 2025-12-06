@@ -1792,7 +1792,7 @@ $color-secondary: #3b6de5;
 .member-grid {
   // @extend %centered-flex;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, 1fr); 
   gap: 25px;
   align-content: center;
   justify-items: center;
@@ -1805,6 +1805,7 @@ $color-secondary: #3b6de5;
   box-shadow: 5px 5px 25px black;
   margin: 15px;
   width: 400px;
+  height: auto;
   flex-wrap: wrap;
   // transition: all 3s $animation-curve;
 
