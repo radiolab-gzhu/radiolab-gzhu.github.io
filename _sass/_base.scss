@@ -1805,6 +1805,7 @@ $color-secondary: #3b6de5;
   box-shadow: 5px 5px 25px black;
   margin: 15px;
   width: 400px;
+  flex-wrap: wrap;
   // transition: all 3s $animation-curve;
 
   &.expanded {
