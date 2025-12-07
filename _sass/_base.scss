@@ -1728,9 +1728,9 @@ activities
 // 基本变量
 $animation-curve: cubic-bezier(0.34, 1.56, 0.64, 1);
 $animation-duration: 1.2s;
-$card-width-normal: 400px;
-$card-width-collapsed: 160px;
-$card-width-expanded: 600px;
+$card-width-normal: 45%;
+$card-width-collapsed: 45%;
+$card-width-expanded: 90%;
 $card-gap: 25px;
 
 // 颜色变量
@@ -1810,15 +1810,15 @@ $card-gap: 25px;
   min-width: 160px;
   max-width: 95vw;
   transition: box-shadow 0.2s;
-  width: $card-width;
-  height: 500px;        // 固定高度（可根据实际需求调整）
+  // width: 45%;
+  height: 300px auto;        // 固定高度（可根据实际需求调整）
   box-sizing: border-box;
   margin-bottom: $card-gap;
 
   // 保证每行最多2个
-  flex: 0 0 $card-width;
-  max-width: $card-width;
-  min-width: $card-width;
+  // flex: 0 0 $card-width;
+  // max-width: $card-width;
+  // min-width: $card-width;
 
   // 移动端适配，宽度全屏
   @media (max-width: 850px) {
