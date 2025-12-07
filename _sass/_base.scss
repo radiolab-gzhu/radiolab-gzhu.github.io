@@ -1786,13 +1786,24 @@ $shadow-card: 5px 5px 25px 0 rgba(37, 37, 37, 0.2);
 
 // 成员网格布局
 .member-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); // 每行2个
+  display: flex;
+  flex-wrap: wrap;
   gap: $card-gap;
+  justify-content: center;
 
-  // 响应式：窄屏时仅1列
+  .member-card {
+    flex: 0 0 calc(50% - #{$card-gap}); // 每行两个
+    max-width: calc(50% - #{$card-gap});
+    min-width: 160px;
+    box-sizing: border-box;
+  }
+
+  // 窄屏时：最多一行一个
   @media (max-width: 800px) {
-    grid-template-columns: 1fr;
+    .member-card {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
   }
 }
 
