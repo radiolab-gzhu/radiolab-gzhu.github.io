@@ -1811,7 +1811,7 @@ $card-gap: 25px;
   max-width: 95vw;
   transition: box-shadow 0.2s;
   // width: 45%;
-  height: 300px auto;        // 固定高度（可根据实际需求调整）
+  height: 300px;        // 固定高度（可根据实际需求调整）
   box-sizing: border-box;
   margin-bottom: $card-gap;
 
