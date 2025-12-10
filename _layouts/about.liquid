@@ -13,18 +13,18 @@ layout: default
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
-<div class="slider">
-  {% if page.pic %}
-    {% for pic in page.pic %}
-      <div
-        class="slide {% if forloop.first %}active{% endif %}"
-        style="background-image: url('{{ pic.path }}')"
-      >
-        <div class="slide-title">{{ pic.title }}</div>
-      </div>
-    {% endfor %}
-  {% endif %}
-</div>
+  <div class="slider">
+    {% if page.pic %}
+      {% for pic in page.pic %}
+        <div
+          class="slide {% if forloop.first %}active{% endif %}"
+          style="background-image: url('{{ pic.path }}')"
+        >
+          <div class="slide-title">{{ pic.title }}</div>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
   <article>
     {% if site.about %}
       <div class="about-section">
@@ -67,33 +67,33 @@ layout: default
       </div>
     {% endcomment %}
     <!-- Selected papers -->
-    {% comment %} 
+    {% comment %}
       {% if page.selected_papers %}
         <h2>
           <a href="{{ '/publications/' | relative_url }}" style="color: inherit">publications</a>
         </h2>
         {% include selected_papers.liquid %}
-      {% endif %} 
+      {% endif %}
     {% endcomment %}
   </article>
 </div>
 <script>
-  const slides = document.querySelectorAll(".slide");
+  const slides = document.querySelectorAll('.slide');
   const slideDuration = 5000; // 5秒切换一次
   let slideInterval;
 
   // 初始化轮播
   function initSlider() {
-    const slider = document.querySelector(".slider");
+    const slider = document.querySelector('.slider');
 
     // 创建幻灯片
     images.forEach((image, index) => {
-      const slide = document.createElement("div");
-      slide.className = `slide ${index === 0 ? "active" : ""}`;
+      const slide = document.createElement('div');
+      slide.className = `slide ${index === 0 ? 'active' : ''}`;
       slide.style.backgroundImage = `url('${image.url}')`;
 
-      const title = document.createElement("div");
-      title.className = "slide-title";
+      const title = document.createElement('div');
+      title.className = 'slide-title';
       title.textContent = image.title;
 
       slide.appendChild(title);
@@ -106,16 +106,16 @@ layout: default
 
   // 切换到下一张幻灯片
   function nextSlide() {
-    const slides = document.querySelectorAll(".slide");
+    const slides = document.querySelectorAll('.slide');
 
     // 移除当前幻灯片的激活状态
-    slides[currentSlide].classList.remove("active");
+    slides[currentSlide].classList.remove('active');
 
     // 计算下一张索引
     currentSlide = (currentSlide + 1) % images.length;
 
     // 激活下一张幻灯片
-    slides[currentSlide].classList.add("active");
+    slides[currentSlide].classList.add('active');
   }
 
   // 启动轮播
@@ -124,5 +124,5 @@ layout: default
   }
 
   // 页面加载完成后初始化轮播
-  document.addEventListener("DOMContentLoaded", initSlider);
+  document.addEventListener('DOMContentLoaded', initSlider);
 </script>

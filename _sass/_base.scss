@@ -1668,8 +1668,7 @@ figure.cover {
   letter-spacing: 0.5px;
 }
 
-activities
-.activity-section {
+.activities .activity-section {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px 20px;
@@ -1748,13 +1747,22 @@ $shadow-card: 5px 5px 25px 0 rgba(37, 37, 37, 0.2);
 
 // 动画
 @keyframes expandcard {
-  from { width: $card-width-collapsed; }
-  to { width: $card-width-expanded; }
+  from {
+    width: $card-width-collapsed;
+  }
+  to {
+    width: $card-width-expanded;
+  }
 }
 
+
 @keyframes reducecard {
-  from { width: $card-width-expanded; }
-  to { width: $card-width-collapsed; }
+  from {
+    width: $card-width-expanded;
+  }
+  to {
+    width: $card-width-collapsed;
+  }
 }
 
 @keyframes showinfo {
@@ -1783,7 +1791,6 @@ $shadow-card: 5px 5px 25px 0 rgba(37, 37, 37, 0.2);
   }
 }
 
-
 // 成员网格布局
 $card-width: 400px;
 $card-gap: 25px;
@@ -1792,7 +1799,7 @@ $card-gap: 25px;
   display: flex;
   flex-wrap: wrap;
   gap: $card-gap;
-  justify-content: center; // 居中排列
+  justify-content: center;
 
   // 移动端一行一张卡片
   @media (max-width: 850px) {
@@ -1811,7 +1818,7 @@ $card-gap: 25px;
   max-width: 95vw;
   transition: box-shadow 0.2s;
   // width: 45%;
-  height: 300px;        // 固定高度（可根据实际需求调整）
+  height: 300px;
   box-sizing: border-box;
   margin-bottom: $card-gap;
 
@@ -1855,7 +1862,7 @@ $card-gap: 25px;
     border-radius: 50%;
     max-width: 100%;
     object-fit: cover;
-    box-shadow: 0 2px 8px rgba(46,62,131,0.1);
+    box-shadow: 0 2px 8px rgba(46, 62, 131, 0.1);
   }
 
   .name {
@@ -1882,7 +1889,9 @@ $card-gap: 25px;
   flex-direction: column;
   margin-right: 5px;
   overflow: hidden;
-  transition: opacity 0.3s, width $animation-duration $animation-curve;
+  transition:
+    opacity 0.3s,
+    width $animation-duration $animation-curve;
   pointer-events: none;
   // 动画后自动解除 pointer-events
   &.expanded {
