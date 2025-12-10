@@ -14,8 +14,8 @@ layout: default
     <p class="desc">{{ page.subtitle }}</p>
   </header>
 <div class="slider">
-  {% if site.page.pic %}
-    {% for pic in site.page.pic %}
+  {% if page.pic %}
+    {% for pic in page.pic %}
       <div
         class="slide {% if forloop.first %}active{% endif %}"
         style="background-image: url('{{ pic.path }}')"
