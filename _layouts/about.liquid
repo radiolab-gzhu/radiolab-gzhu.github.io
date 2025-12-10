@@ -13,7 +13,18 @@ layout: default
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
-
+<div class="slider">
+  {% if site.page.pic %}
+    {% for pic insite.page.pic %}
+      <div
+        class="slide {% if forloop.first %}active{% endif %}"
+        style="background-image: url('{{ pic.path }}')"
+      >
+        <div class="slide-title">{{ pic.title }}</div>
+      </div>
+    {% endfor %}
+  {% endif %}
+</div>
   <article>
     {% if site.about %}
       <div class="about-section">
@@ -56,11 +67,13 @@ layout: default
       </div>
     {% endcomment %}
     <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
+    {% comment %} 
+      {% if page.selected_papers %}
+        <h2>
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">publications</a>
+        </h2>
+        {% include selected_papers.liquid %}
+      {% endif %} 
+    {% endcomment %}
   </article>
 </div>
