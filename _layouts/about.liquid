@@ -78,51 +78,134 @@ layout: default
   </article>
 </div>
 <script>
-  const slides = document.querySelectorAll('.slide');
-  const slideDuration = 5000; // 5秒切换一次
+// 全局变量
+  let currentSlide = 0;
   let slideInterval;
-
-  // 初始化轮播
-  function initSlider() {
-    const slider = document.querySelector('.slider');
-
-    // 创建幻灯片
-    images.forEach((image, index) => {
-      const slide = document.createElement('div');
-      slide.className = `slide ${index === 0 ? 'active' : ''}`;
-      slide.style.backgroundImage = `url('${image.url}')`;
-
-      const title = document.createElement('div');
-      title.className = 'slide-title';
-      title.textContent = image.title;
-
-      slide.appendChild(title);
-      slider.appendChild(slide);
+  const slideDuration = 5000; // 5秒切换一次
+  
+  // 获取所有幻灯片
+  const slides = document.querySelectorAll('.slide');
+  
+  // 切换到指定索引的幻灯片
+  function goToSlide(index) {
+    // 移除所有幻灯片的激活状态
+    slides.forEach(slide => {
+      slide.classList.remove('active');
     });
-
-    // 启动自动轮播
-    startSlider();
-  }
-
-  // 切换到下一张幻灯片
-  function nextSlide() {
-    const slides = document.querySelectorAll('.slide');
-
-    // 移除当前幻灯片的激活状态
-    slides[currentSlide].classList.remove('active');
-
-    // 计算下一张索引
-    currentSlide = (currentSlide + 1) % images.length;
-
-    // 激活下一张幻灯片
+    
+    // 确保索引在有效范围内
+    currentSlide = (index + slides.length) % slides.length;
+    
+    // 激活当前幻灯片
     slides[currentSlide].classList.add('active');
   }
-
+  
+  // 切换到下一张幻灯片
+  function nextSlide() {
+    goToSlide(currentSlide + 1);
+  }
+  
+  // 切换到上一张幻灯片
+  function prevSlide() {
+    goToSlide(currentSlide - 1);
+  }
+  
   // 启动轮播
   function startSlider() {
-    slideInterval = setInterval(nextSlide, slideDuration);
+    if (slides.length > 1) {
+      stopSlider(); // 先停止之前的定时器
+      slideInterval = setInterval(nextSlide, slideDuration);
+    }
   }
-
+  
+  // 停止轮播
+  function stopSlider() {
+    if (slideInterval) {
+      clearInterval(slideInterval);
+    }
+  }
+  
+  // 初始化轮播
+  function initSlider() {
+    if (slides.length === 0) return;
+    
+    // 启动自动轮播
+    startSlider();
+    
+    // 添加鼠标交互：悬停时暂停，离开时恢复
+    const slider = document.querySelector('.slider');
+    if (slider) {
+      slider.addEventListener('mouseenter', stopSlider);
+      slider.addEventListener('mouseleave', startSlider);
+    }
+    
+    // 可以添加导航按钮（可选）
+    addNavigationControls();
+  }
+  
+  // 添加导航控件（可选功能）
+  function addNavigationControls() {
+    const slider = document.querySelector('.slider');
+    
+    // 创建上一张按钮
+    const prevBtn = document.createElement('button');
+    prevBtn.innerHTML = '&#10094;';
+    prevBtn.style.cssText = `
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 50%;
+      z-index: 10;
+    `;
+    prevBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      prevSlide();
+      startSlider(); // 点击后重置定时器
+    });
+    
+    // 创建下一张按钮
+    const nextBtn = document.createElement('button');
+    nextBtn.innerHTML = '&#10095;';
+    nextBtn.style.cssText = `
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 50%;
+      z-index: 10;
+    `;
+    nextBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      nextSlide();
+      startSlider(); // 点击后重置定时器
+    });
+    
+    slider.appendChild(prevBtn);
+    slider.appendChild(nextBtn);
+  }
+  
   // 页面加载完成后初始化轮播
   document.addEventListener('DOMContentLoaded', initSlider);
+  
+  // 页面不可见时暂停轮播（优化性能）
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      stopSlider();
+    } else {
+      startSlider();
+    }
+  });
 </script>
