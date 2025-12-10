@@ -22,10 +22,10 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 pic:
-  - path: assets/img/All/science team.jpg
-    title: science team
-  - path: assets/img/All/program team.jpg
-    title: program team
+  - path: assets/img/All/team1.jpg
+    title: our team
+  - path: assets/img/All/team2.jpg
+    title: our team
 # latest_posts:
 #   enabled: true
 #   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
