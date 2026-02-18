@@ -15,34 +15,34 @@ layout: default
         <hr class="group-hr">
       </div>
       {% comment %} ------------------old-------------------------- {% endcomment %}
-        <div class="group-member-card-display">
-          {% for member in part.group %}
-            <div class="group-member-card">
-              <div class="member-name-img">
-                <img src="{{ member.img }}" class="member-image" alt="{{ member.name }}">
-                <span class="member-name">{{ member.name }}</span>
-                {% if member.ident %}
-                  <p class="ident">{{ member.ident }}</p>
-                {% endif %}
-              </div>
-              <div class="member-label">
-                <ul class="member-info">
-                  {% for label in member.label %}
-                    <li class="member-info">
-                      <span class="key">{{ label.key }}:</span>
-                      {% if label.url %}
-                        <a href="{{ label.url }}" class="value">{{ label.url }}</a>
-                      {% endif %}
-                      {% if label.value %}
-                        <span class="value">{{ label.value }}</span>
-                      {% endif %}
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
+      <div class="group-member-card-display">
+        {% for member in part.group %}
+          <div class="group-member-card">
+            <div class="member-name-img">
+              <img src="{{ member.img }}" class="member-image" alt="{{ member.name }}">
+              <span class="member-name">{{ member.name }}</span>
+              {% if member.ident %}
+                <p class="ident">{{ member.ident }}</p>
+              {% endif %}
             </div>
-          {% endfor %}
-        </div>
+            <div class="member-label">
+              <ul class="member-info">
+                {% for label in member.label %}
+                  <li class="member-info">
+                    <span class="key">{{ label.key }}:</span>
+                    {% if label.url %}
+                      <a href="{{ label.url }}" class="value">{{ label.url }}</a>
+                    {% endif %}
+                    {% if label.value %}
+                      <span class="value">{{ label.value }}</span>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
       {% comment %} ------------------old-------------------------- {% endcomment %}
       {% comment %} ------------------new-------------------------- {% endcomment %}
       {% comment %}
