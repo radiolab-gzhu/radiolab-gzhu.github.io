@@ -68,14 +68,6 @@
         - key: Email
           value: bychen@e.gzhu.edu.cn
 
-    - name: Junhui Cai
-      img: assets/img/JunhuiCai/JunhuiCai.jpg
-      label:
-        - key: Research Interest
-          value: Astronomical data processing
-        - key: Email
-          value: jhuicai@e.gzhu.edu.cn
-
     - name: Jinqiang Zeng
       img: assets/img/JinqiangZeng/JinqiangZeng.jpg
       label:
