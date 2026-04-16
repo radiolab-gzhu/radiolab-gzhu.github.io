@@ -15,7 +15,7 @@ layout: default
         <hr class="group-hr">
       </div>
       {% comment %} ------------------old-------------------------- {% endcomment %}
-      <div class="group-member-card-display">
+      {% comment %} <div class="group-member-card-display">
         {% for member in part.group %}
           <div class="group-member-card">
             <div class="member-name-img">
@@ -42,10 +42,9 @@ layout: default
             </div>
           </div>
         {% endfor %}
-      </div>
+      </div> {% endcomment %}
       {% comment %} ------------------old-------------------------- {% endcomment %}
       {% comment %} ------------------new-------------------------- {% endcomment %}
-      {% comment %}
         <div class="member-grid">
           {% for member in part.group %}
             <div class="member-card">
@@ -72,7 +71,6 @@ layout: default
             </div>
           {% endfor %}
         </div>
-      {% endcomment %}
       {% comment %} ------------------------------------------------------------- {% endcomment %}
     </div>
   {% endfor %}

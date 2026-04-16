@@ -1425,6 +1425,7 @@ figure.cover {
 }
 
 /*======== 只保留与修改相关的核心样式 ========*/
+// begin
 .members-list {
   background-color: var(--global-bg-color);
 }
@@ -1667,6 +1668,8 @@ figure.cover {
   text-align: center;
   letter-spacing: 0.5px;
 }
+//end
+
 
 .activities .activity-section {
   max-width: 800px;
